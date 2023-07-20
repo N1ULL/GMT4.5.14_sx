@@ -7,7 +7,7 @@ gmtset LABEL_OFFSET 0.1c
 
 grdcut etopo2.grd -R70/135/10/55 -Gnew.grd
 grdgradient new.grd -A90 -Ne0.8 -M -Gnew.grd.int
-grdimage new.grd -R -JM15 -Ba10f5g10/a10f5g10:."ÖÐ¹úµØÐÎÍ¼":neWS -Inew.grd.int -CGMT_globe.cpt -Xc -Yc -K>plot2.ps
+grdimage new.grd -R -JM15 -Ba10f5g10/a10f5g10:."ä¸­å›½åœ°å½¢å›¾":neWS -Inew.grd.int -CGMT_globe.cpt -Xc -Yc -K>plot2.ps
 pscoast -R -J -N1/0.5p,black -W1/1p,blue -O -K >> plot2.ps
-psscale -CGMT_globe.cpt -D7.4/-1/15/0.2h -B2000:"¸ß³Ì":/1000:"m": -O>>plot2.ps
+psscale -CGMT_globe.cpt -D7.4/-1/15/0.2h -B2000:"é«˜ç¨‹":/1000:"m": -O>>plot2.ps
 ps2raster -C-sFONTPATH="C:\Windows\Fonts" plot2.ps -Tg -P
